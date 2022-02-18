@@ -1,0 +1,259 @@
+
+****************************************
+Report : library
+Library: sclib_tigfet10_hpall_tt_0p70v_25c
+Version: S-2021.06-SP3
+Date   : Fri Feb 18 14:36:02 2022
+****************************************
+
+Library Type            : Technology, PG pin Based
+Tool Created            : S-2021.06-SP3
+Date Created            : $Date: Thu Feb 17 09:24:21 2022 $
+Library Version         : 1.0
+Comments                : 
+Time Unit               : 1ps
+
+Capacitive Load Unit    : 1.000000ff
+Pulling Resistance Unit : 1kilo-ohm
+Voltage Unit            : 1V
+Current Unit            : 1mA
+Dynamic Energy Unit     : 0.001000pJ   (derived from V,C units)
+Leakage Power Unit      : 1pW
+Bus Naming Style        : %s[%d] (default)
+
+Operating Conditions:
+
+
+    Operating Condition Name : PVT_0P7V_25C
+    Library : sclib_tigfet10_hpall_tt_0p70v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   0.70
+
+Input Voltages:
+
+    No input_voltage groups specified.
+
+Output Voltages:
+
+    No output_voltage groups specified.
+
+nom_voltage : 0.7
+Voltage Map: Voltage Name   : Voltage Value
+             VDD              0.7
+             VSS              0
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Porosity information:
+
+    No porosity information specified.
+
+In_place optimization mode:  match_footprint
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+
+Delay Threshold Trip-Points:
+
+	input_threshold_pct_rise:	50
+	output_threshold_pct_rise:	50
+	input_threshold_pct_fall:	50
+	output_threshold_pct_fall:	50
+
+
+Slew Threshold Trip-Points:
+
+	slew_lower_threshold_pct_rise:	20
+	slew_upper_threshold_pct_rise:	80
+	slew_lower_threshold_pct_fall:	20
+	slew_upper_threshold_pct_fall:	80
+
+	slew_derate_from_library:	1
+
+
+Components:
+
+    Attributes:
+       af - active falling
+       ah - active high
+       al - active low
+       ar - active rising
+        b - black box (function unknown)
+       ce - clock enable
+       cg - clock gating integrated cell
+    short - has shorted pin
+       ub - unbuffered
+      pgt - pass gate
+      ctl - has CTL test model
+        d - dont_touch
+      iso - isolation cell
+  clk_iso - clock isolation cell
+   ne_iso - no enable isolation cell
+       ls - level shifter
+      dls - differential level shifter
+    ne-ls - no enable level shifter
+       mo - map_only
+     1p0g - power only, no ground
+     0p1g - ground only, no power
+     0p0g - no power/ground
+        p - preferred
+      pad - pad cell
+       hp - hold_preferred
+     pwrg - power gating cell
+        r - removable
+        s - statetable
+      sa0 - dont_fault stuck-at-0
+      sa1 - dont_fault stuck-at-1
+     sa01 - dont_fault both stuck-at-0 and stuck-at-1
+       sz - use_for_size_only
+      soi - silicon on insulator
+        t - test cell. t(scan_type) as
+          t(mux_ff) - muxed flip-flop
+          t(mux_ld) - muxed latch
+          t(clk_scan) - clocked scan
+          t(clk_scan_ld) - clocked scan latch
+          t(lssd_dld) - double latch LSSD
+          t(lssd_sld) - single latch LSSD
+          t(lssd_clk) - clocked LSSD
+          t(lssd_auxclk) - auxiliary clock LSSD
+          t(lssd_se) - scan enabled LSSD
+        u - dont_use
+      udp - usable for datapath generators
+      ufc - user_function_class. ufc(type) as
+          ufc(u) - user-defined
+          ufc(a) - automatically generated
+      ccs - composite current source
+    c_ccs - compact ccs timing modeling
+     ccsn - ccs noise data modeling
+     ccsp - ccs power data modeling
+     recv - receiver model
+      lvf - lvf modeling
+      imc - macro cell 
+switch_cg - switch cell (coarse grain)
+      ret - retention cell
+ ret(zpr) - zero pin retention cell
+    sprpg - using same pg_pin as related power and ground
+       ao - always on cell
+     gicg - generic integrated clock gating
+       va - variation-aware ccs timing modeling
+      val - variation-aware ccs leakage power modeling
+      fil - filler cell
+      tap - tap cell
+    decap - decap cell
+      pll - pll cell
+      mem - memory cell
+      adt - antenna diode type. adt(type) as
+          adt(pg) - power_and_ground
+          adt(p) - power
+          adt(g) - ground
+      ss - synchronizer_stage
+
+
+Pin Attributes:
+       ao - always on pin
+      lse - level shifter enable pin
+     isoe - isolation cell enable pin
+     scmr - standard cell main rail
+    short - shorted pin
+       uc - unconnected pin
+
+
+   Cell                Footprint    Attributes
+   -------------------------------------------
+   AND2_HPNW1          "AND2_F1"        
+   AND2_HPNW4          "AND2_F1"        
+   AND2_HPNW8          "AND2_F2"        
+   AND2_HPNW12         "AND2_F3"        
+   AOI21_HPNW1         "AOI21_F1"       
+   AOI21_HPNW4         "AOI21_F1"       
+   AOI21_HPNW8         "AOI21_F2"       
+   AOI21_HPNW12        "AOI21_F3"       
+   BUF1_HPNW1          "BUF1_F1"        
+   BUF1_HPNW4          "BUF1_F1"        
+   BUF1_HPNW8          "BUF1_F2"        
+   BUF1_HPNW12         "BUF1_F3"        
+   DFFNQ1_HPNW1        "DFFNQ1_F1"      s
+   DFFNQ1_HPNW4        "DFFNQ1_F1"      s
+   DFFNQ1_HPNW8        "DFFNQ1_F2"      s
+   DFFNQ1_HPNW12       "DFFNQ1_F3"      s
+   DFFQ1_HPNW1         "DFFQ1_F1"       s
+   DFFQ1_HPNW4         "DFFQ1_F1"       s
+   DFFQ1_HPNW8         "DFFQ1_F2"       s
+   DFFQ1_HPNW12        "DFFQ1_F3"       s
+   INV1_HPNW1          "INV1_F1"        
+   INV1_HPNW4          "INV1_F1"        
+   INV1_HPNW8          "INV1_F2"        
+   INV1_HPNW12         "INV1_F3"        
+   LATNQ1_HPNW1        "LATNQ1_F1"      s
+   LATNQ1_HPNW4        "LATNQ1_F1"      s
+   LATNQ1_HPNW8        "LATNQ1_F2"      s
+   LATNQ1_HPNW12       "LATNQ1_F3"      s
+   LATNQN1_HPNW1       "LATNQN1_F1"     s
+   LATNQN1_HPNW4       "LATNQN1_F1"     s
+   LATNQN1_HPNW8       "LATNQN1_F2"     s
+   LATNQN1_HPNW12      "LATNQN1_F3"     s
+   LATQ1_HPNW1         "LATQ1_F1"       s
+   LATQ1_HPNW4         "LATQ1_F1"       s
+   LATQ1_HPNW8         "LATQ1_F2"       s
+   LATQ1_HPNW12        "LATQ1_F3"       s
+   LATQN1_HPNW1        "LATQN1_F1"      s
+   LATQN1_HPNW4        "LATQN1_F1"      s
+   LATQN1_HPNW8        "LATQN1_F2"      s
+   LATQN1_HPNW12       "LATQN1_F3"      s
+   MAJ3_HPNW1          "MAJ3_F1"        
+   MAJ3_HPNW4          "MAJ3_F1"        
+   MAJ3_HPNW8          "MAJ3_F2"        
+   MAJ3_HPNW12         "MAJ3_F3"        
+   MIN3_HPNW1          "MIN3_F1"        
+   MIN3_HPNW4          "MIN3_F1"        
+   MIN3_HPNW8          "MIN3_F2"        
+   MIN3_HPNW12         "MIN3_F3"        
+   MUX2_HPNW1          "MUX2_F1"        
+   MUX2_HPNW4          "MUX2_F1"        
+   MUX2_HPNW8          "MUX2_F2"        
+   MUX2_HPNW12         "MUX2_F3"        
+   MUXI2_HPNW1         "MUXI2_F1"       
+   MUXI2_HPNW4         "MUXI2_F1"       
+   MUXI2_HPNW8         "MUXI2_F2"       
+   MUXI2_HPNW12        "MUXI2_F3"       
+   NAND2_HPNW1         "NAND2_F1"       
+   NAND2_HPNW4         "NAND2_F1"       
+   NAND2_HPNW8         "NAND2_F2"       
+   NAND2_HPNW12        "NAND2_F3"       
+   NOR2_HPNW1          "NOR2_F1"        
+   NOR2_HPNW4          "NOR2_F1"        
+   NOR2_HPNW8          "NOR2_F2"        
+   NOR2_HPNW12         "NOR2_F3"        
+   OAI21_HPNW1         "OAI21_F1"       
+   OAI21_HPNW4         "OAI21_F1"       
+   OAI21_HPNW8         "OAI21_F2"       
+   OAI21_HPNW12        "OAI21_F3"       
+   OR2_HPNW1           "OR2_F1"         
+   OR2_HPNW4           "OR2_F1"         
+   OR2_HPNW8           "OR2_F2"         
+   OR2_HPNW12          "OR2_F3"         
+   XNOR2_HPNW1         "XNOR2_F1"       
+   XNOR2_HPNW4         "XNOR2_F1"       
+   XNOR2_HPNW8         "XNOR2_F2"       
+   XNOR2_HPNW12        "XNOR2_F3"       
+   XNOR3_HPNW1         "XNOR3_F1"       
+   XNOR3_HPNW4         "XNOR3_F1"       
+   XNOR3_HPNW8         "XNOR3_F2"       
+   XNOR3_HPNW12        "XNOR3_F3"       
+   XOR2_HPNW1          "XOR2_F1"        
+   XOR2_HPNW4          "XOR2_F1"        
+   XOR2_HPNW8          "XOR2_F2"        
+   XOR2_HPNW12         "XOR2_F3"        
+   XOR3_HPNW1          "XOR3_F1"        
+   XOR3_HPNW4          "XOR3_F1"        
+   XOR3_HPNW8          "XOR3_F2"        
+   XOR3_HPNW12         "XOR3_F3"        
+1
