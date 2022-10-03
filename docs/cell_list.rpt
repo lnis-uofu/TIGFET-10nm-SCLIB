@@ -3,12 +3,12 @@
 Report : library
 Library: sclib_tigfet10_hpall_tt_0p70v_25c
 Version: S-2021.06-SP3
-Date   : Fri Feb 18 14:36:02 2022
+Date   : Mon Oct  3 07:55:06 2022
 ****************************************
 
 Library Type            : Technology, PG pin Based
 Tool Created            : S-2021.06-SP3
-Date Created            : $Date: Thu Feb 17 09:24:21 2022 $
+Date Created            : $Date: Wed Apr 13 18:12:25 2022 $
 Library Version         : 1.0
 Comments                : 
 Time Unit               : 1ps
@@ -180,10 +180,6 @@ Pin Attributes:
    BUF1_HPNW4          "BUF1_F1"        
    BUF1_HPNW8          "BUF1_F2"        
    BUF1_HPNW12         "BUF1_F3"        
-   DFFNQ1_HPNW1        "DFFNQ1_F1"      s
-   DFFNQ1_HPNW4        "DFFNQ1_F1"      s
-   DFFNQ1_HPNW8        "DFFNQ1_F2"      s
-   DFFNQ1_HPNW12       "DFFNQ1_F3"      s
    DFFQ1_HPNW1         "DFFQ1_F1"       s
    DFFQ1_HPNW4         "DFFQ1_F1"       s
    DFFQ1_HPNW8         "DFFQ1_F2"       s
@@ -192,22 +188,10 @@ Pin Attributes:
    INV1_HPNW4          "INV1_F1"        
    INV1_HPNW8          "INV1_F2"        
    INV1_HPNW12         "INV1_F3"        
-   LATNQ1_HPNW1        "LATNQ1_F1"      s
-   LATNQ1_HPNW4        "LATNQ1_F1"      s
-   LATNQ1_HPNW8        "LATNQ1_F2"      s
-   LATNQ1_HPNW12       "LATNQ1_F3"      s
-   LATNQN1_HPNW1       "LATNQN1_F1"     s
-   LATNQN1_HPNW4       "LATNQN1_F1"     s
-   LATNQN1_HPNW8       "LATNQN1_F2"     s
-   LATNQN1_HPNW12      "LATNQN1_F3"     s
    LATQ1_HPNW1         "LATQ1_F1"       s
    LATQ1_HPNW4         "LATQ1_F1"       s
    LATQ1_HPNW8         "LATQ1_F2"       s
    LATQ1_HPNW12        "LATQ1_F3"       s
-   LATQN1_HPNW1        "LATQN1_F1"      s
-   LATQN1_HPNW4        "LATQN1_F1"      s
-   LATQN1_HPNW8        "LATQN1_F2"      s
-   LATQN1_HPNW12       "LATQN1_F3"      s
    MAJ3_HPNW1          "MAJ3_F1"        
    MAJ3_HPNW4          "MAJ3_F1"        
    MAJ3_HPNW8          "MAJ3_F2"        

@@ -1,4 +1,4 @@
-// Verilog for library /research/ece/lnis/USERS/gauchi/TIGFET/TIGFET-10nm-model/liberate/lib/sclib_tigfet10_hpnw1_tt_0p70v_25c created by Liberate 19.2.1.591 on Thu Feb 17 16:37:28 MST 2022 for SDF version 2.1
+// Verilog for library /research/ece/lnis/USERS/gauchi/TIGFET/TIGFET-10nm-model/liberate/lib/sclib_tigfet10_hpnw1_tt_0p70v_25c created by Liberate 19.2.1.591 on Wed Apr 13 22:58:31 MDT 2022 for SDF version 2.1
 
 // type: AND2_F1 
 `timescale 1ns/10ps
@@ -64,34 +64,6 @@ module BUF1_HPNW1 (Y, A);
 endmodule
 `endcelldefine
 
-// type: DFFNQ1_F1 
-`timescale 1ns/10ps
-`celldefine
-module DFFNQ1_HPNW1 (Q, D, CKN);
-	output Q;
-	input D, CKN;
-	reg notifier;
-	wire delayed_D, delayed_CKN;
-
-	// Function
-	wire int_fwire_clk, int_fwire_IQ, xcr_0;
-
-	not (int_fwire_clk, delayed_CKN);
-	altos_dff_err (xcr_0, int_fwire_clk, delayed_D);
-	altos_dff (int_fwire_IQ, notifier, int_fwire_clk, delayed_D, xcr_0);
-	buf (Q, int_fwire_IQ);
-
-	// Timing
-	specify
-		(negedge CKN => (Q:D)) = 0;
-		$setuphold (negedge CKN, posedge D, 0, 0, notifier,,, delayed_CKN, delayed_D);
-		$setuphold (negedge CKN, negedge D, 0, 0, notifier,,, delayed_CKN, delayed_D);
-		$width (posedge CKN, 0, 0, notifier);
-		$width (negedge CKN, 0, 0, notifier);
-	endspecify
-endmodule
-`endcelldefine
-
 // type: DFFQ1_F1 
 `timescale 1ns/10ps
 `celldefine
@@ -136,60 +108,6 @@ module INV1_HPNW1 (Y, A);
 endmodule
 `endcelldefine
 
-// type: LATNQ1_F1 
-`timescale 1ns/10ps
-`celldefine
-module LATNQ1_HPNW1 (Q, D, GN);
-	output Q;
-	input D, GN;
-	reg notifier;
-	wire delayed_D, delayed_GN;
-
-	// Function
-	wire int_fwire_clk, int_fwire_IQ;
-
-	not (int_fwire_clk, delayed_GN);
-	altos_latch (int_fwire_IQ, notifier, int_fwire_clk, delayed_D);
-	buf (Q, int_fwire_IQ);
-
-	// Timing
-	specify
-		(D => Q) = 0;
-		(negedge GN => (Q:D)) = 0;
-		$setuphold (posedge GN, posedge D, 0, 0, notifier,,, delayed_GN, delayed_D);
-		$setuphold (posedge GN, negedge D, 0, 0, notifier,,, delayed_GN, delayed_D);
-		$width (negedge GN, 0, 0, notifier);
-	endspecify
-endmodule
-`endcelldefine
-
-// type: LATNQN1_F1 
-`timescale 1ns/10ps
-`celldefine
-module LATNQN1_HPNW1 (QN, D, GN);
-	output QN;
-	input D, GN;
-	reg notifier;
-	wire delayed_D, delayed_GN;
-
-	// Function
-	wire int_fwire_clk, int_fwire_IQ;
-
-	not (int_fwire_clk, delayed_GN);
-	altos_latch (int_fwire_IQ, notifier, int_fwire_clk, delayed_D);
-	buf (QN, int_fwire_IQN);
-
-	// Timing
-	specify
-		(D => QN) = 0;
-		(negedge GN => (QN:D)) = 0;
-		$setuphold (posedge GN, posedge D, 0, 0, notifier,,, delayed_GN, delayed_D);
-		$setuphold (posedge GN, negedge D, 0, 0, notifier,,, delayed_GN, delayed_D);
-		$width (negedge GN, 0, 0, notifier);
-	endspecify
-endmodule
-`endcelldefine
-
 // type: LATQ1_F1 
 `timescale 1ns/10ps
 `celldefine
@@ -209,32 +127,6 @@ module LATQ1_HPNW1 (Q, D, G);
 	specify
 		(D => Q) = 0;
 		(posedge G => (Q:D)) = 0;
-		$setuphold (negedge G, posedge D, 0, 0, notifier,,, delayed_G, delayed_D);
-		$setuphold (negedge G, negedge D, 0, 0, notifier,,, delayed_G, delayed_D);
-		$width (posedge G, 0, 0, notifier);
-	endspecify
-endmodule
-`endcelldefine
-
-// type: LATQN1_F1 
-`timescale 1ns/10ps
-`celldefine
-module LATQN1_HPNW1 (QN, D, G);
-	output QN;
-	input D, G;
-	reg notifier;
-	wire delayed_D, delayed_G;
-
-	// Function
-	wire int_fwire_IQ;
-
-	altos_latch (int_fwire_IQ, notifier, delayed_G, delayed_D);
-	buf (QN, int_fwire_IQN);
-
-	// Timing
-	specify
-		(D => QN) = 0;
-		(posedge G => (QN:D)) = 0;
 		$setuphold (negedge G, posedge D, 0, 0, notifier,,, delayed_G, delayed_D);
 		$setuphold (negedge G, negedge D, 0, 0, notifier,,, delayed_G, delayed_D);
 		$width (posedge G, 0, 0, notifier);
